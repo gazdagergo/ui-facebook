@@ -1,0 +1,62 @@
+body {
+  background: lightgray;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  background: white;
+  width: 500px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.avatar {
+  background: url("../img/react.png");
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-text {
+  font-weight: bold;
+  font-size: 14px;
+  color: #365899;
+}
+
+.avatar-date {
+  color: #616770;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.avatar-dots {
+  background-image: url("../img/dots.png");
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.avatar-dots:hover {
+  background-position-y: -20px;
+}
+
+.post-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #1d2129;
+  line-height: 1.4em;
+}
+
+.post-image {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */

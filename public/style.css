@@ -274,4 +274,89 @@ body {
   background-image: url("../img/menu-triangle-blue.png");
   margin-left: 3px;
 }
+
+.comment-writing-shares {
+  margin: 8px 0;
+  font-size: 12px;
+  color: #365899;
+}
+
+.comment-writing-input {
+  padding: 5px 112px 5px 12px;
+  border-radius: 32px;
+  border: 1px solid lightgray;
+  line-height: 20px;
+  margin-left: 8px;
+  font-size: 12px;
+  flex: 1;
+}
+
+.comment-writing-input:focus {
+  outline: none;
+}
+
+.comment-writing-input-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.comment-writing-input-logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/logo.png");
+  border-radius: 50%;
+}
+
+.comment-writing-input-actions {
+  position: absolute;
+  right: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment-writing-input-actions i.input-action {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.comment-writing-input-actions i.input-action:after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/input-actions.png");
+}
+
+.comment-writing-input-actions i.input-action-emoji:after {
+  background-position-x: -34px;
+}
+
+.comment-writing-input-actions i.input-action-emoji:hover:after {
+  background-position: 0 -17px;
+}
+
+.comment-writing-input-actions i.input-action-photo:hover:after {
+  background-position-x: -17px;
+}
+
+.comment-writing-input-actions i.input-action-gif:after {
+  background-position: -17px -17px;
+}
+
+.comment-writing-input-actions i.input-action-gif:hover:after {
+  background-position: 16px -17px;
+}
+
+.comment-writing-input-actions i.input-action-postit:after {
+  background-position: 16px 33px;
+}
+
+.comment-writing-input-actions i.input-action-postit:hover:after {
+  background-position: 0 16px;
+}
 /*# sourceMappingURL=style.css.map */

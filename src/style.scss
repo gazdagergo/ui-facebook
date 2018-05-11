@@ -25,7 +25,7 @@ body {
 }
 
 .avatar {
-  background: url('../img/react.png');
+  background: url('/img/react.png');
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -58,7 +58,7 @@ body {
   }
 
   &-dots {
-    background-image: url('../img/dots.png');
+    background-image: url('/img/dots.png');
     width: 20px;
     height: 20px;
     margin-left: auto;
@@ -160,7 +160,7 @@ body {
       height: 18px;
       width: 18px;
       display: inline-block;
-      background-image: url('../img/post-actions.png');
+      background-image: url('/img/post-actions.png');
       margin-right: 4px;
     }
     

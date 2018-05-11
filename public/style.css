@@ -4,13 +4,16 @@ body {
   font-family: sans-serif;
 }
 
-.wrapper {
-  background: white;
-  width: 500px;
+.outer-wrap {
   margin: 40px auto;
+  width: 500px;
+  margin-bottom: 300px;
+}
+
+.content-wrap {
+  background: white;
   box-sizing: border-box;
   padding: 12px;
-  margin-bottom: 300px;
 }
 
 .avatar {
@@ -124,6 +127,7 @@ body {
 .action-wrap {
   margin-top: 4px;
   display: flex;
+  align-items: center;
 }
 
 .action-button {
@@ -132,7 +136,7 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
-  width: 150px;
+  flex: 1;
   justify-content: center;
   height: 32px;
   cursor: pointer;
@@ -162,5 +166,112 @@ body {
 
 .action-button-share:before {
   background-position-y: -36px;
+}
+
+.action-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 8px;
+  margin-left: 4px;
+}
+
+.action-menu:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("/img/logo-small.png");
+  margin-right: 3px;
+}
+
+.action-menu:after {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url("/img/menu-triangle.png");
+}
+
+.comment-wrap {
+  background: #EFF0F3;
+  box-sizing: border-box;
+  padding: 8px 12px;
+}
+
+.comment-people {
+  display: flex;
+  align-items: center;
+  color: #365899;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  padding-top: 4px;
+}
+
+.comment-people-emoji-wrap {
+  display: flex;
+}
+
+.comment-people-emoji-wrap .emoji {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 0 1px 0 white;
+  position: relative;
+}
+
+.comment-people-emoji-wrap .emoji-blue {
+  background-color: #3266FE;
+}
+
+.comment-people-emoji-wrap .emoji-red {
+  background-color: #EB3855;
+}
+
+.comment-people-emoji-wrap .emoji-yellow {
+  background-color: #FED25F;
+}
+
+.comment-people-emoji-wrap .emoji:nth-last-child(1) {
+  z-index: 1;
+  margin-right: 6px;
+}
+
+.comment-people-emoji-wrap .emoji:nth-last-child(2) {
+  z-index: 2;
+}
+
+.comment-people-emoji-wrap .emoji:nth-last-child(3) {
+  z-index: 3;
+}
+
+.comment-people-emoji-wrap .emoji:nth-last-child(4) {
+  z-index: 4;
+}
+
+.comment-people-emoji-wrap .emoji:nth-last-child(5) {
+  z-index: 5;
+}
+
+.comment-people-names {
+  font-size: 12px;
+}
+
+.comment-people-interesting {
+  font-size: 11px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.comment-people-interesting:after {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/menu-triangle-blue.png");
+  margin-left: 3px;
 }
 /*# sourceMappingURL=style.css.map */

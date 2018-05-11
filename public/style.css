@@ -256,6 +256,11 @@ body {
 
 .comment-people-names {
   font-size: 12px;
+  cursor: pointer;
+}
+
+.comment-people-names span:hover {
+  text-decoration: underline;
 }
 
 .comment-people-interesting {
@@ -279,6 +284,27 @@ body {
   margin: 8px 0;
   font-size: 12px;
   color: #365899;
+  cursor: pointer;
+}
+
+.comment-writing-shares:hover {
+  text-decoration: underline;
+}
+
+.comment-writing .user-avatar {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.comment-writing .user-avatar-bene {
+  background-image: url("../img/logo.png");
+}
+
+.comment-writing .user-avatar-gergo {
+  background-image: url("../img/gergo.png");
 }
 
 .comment-writing-input {
@@ -297,16 +323,13 @@ body {
 
 .comment-writing-input-wrap {
   display: flex;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
 }
 
-.comment-writing-input-logo {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/logo.png");
-  border-radius: 50%;
+.comment-writing-input-inner {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .comment-writing-input-actions {
@@ -358,5 +381,84 @@ body {
 
 .comment-writing-input-actions i.input-action-postit:hover:after {
   background-position: 0 16px;
+}
+
+.comment-writing-input-hint {
+  font-size: 9px;
+  color: #a0a0a0;
+  margin: 4px 0 4px 42px;
+  letter-spacing: .01em;
+}
+
+.comment-writing-item {
+  margin: 8px 0;
+  display: flex;
+}
+
+.comment-writing-item-text {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+.comment-writing-item-text span {
+  font-weight: bold;
+  color: #365899;
+  cursor: pointer;
+}
+
+.comment-writing-item-text span:hover {
+  text-decoration: underline;
+}
+
+.comment-writing-item-text-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.comment-writing-item-actions {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #606770;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.comment-writing-item-actions span {
+  color: #365899;
+  font-weight: normal;
+}
+
+.comment-writing-item-actions span:hover {
+  text-decoration: underline;
+}
+
+.comment-writing-item-answers {
+  margin-top: 16px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #365899;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.comment-writing-item-answers:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 11px;
+  background-image: url("../img/answer-arrow.png");
+  margin-right: 6px;
+}
+
+.comment-writing-item-answers:hover {
+  border-bottom: 1px solid #365899;
 }
 /*# sourceMappingURL=style.css.map */

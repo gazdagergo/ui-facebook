@@ -3,6 +3,7 @@
 $text-color: #1d2129;
 $text-color-blue: rgb(54, 88, 153);
 $text-color-grey: #606770;
+$text-color-lightgrey: #a0a0a0;
 $button-background-color: #f6f7f9;
 $button-background-color-hover: #e9ebee;
 $button-border-color: #ced0d4;
@@ -266,6 +267,11 @@ body {
 
     &-names {
       font-size: 12px;
+      cursor: pointer;
+
+      span:hover {
+        text-decoration: underline;
+      }
     }
 
     &-interesting {
@@ -291,6 +297,27 @@ body {
       margin: 8px 0;
       font-size: 12px;
       color: $text-color-blue;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .user-avatar {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .user-avatar-bene {
+      background-image: url('../img/logo.png');
+    }
+
+    .user-avatar-gergo {
+      background-image: url('../img/gergo.png');
     }
 
     &-input {
@@ -308,16 +335,13 @@ body {
 
       &-wrap {
         display: flex;
-        align-items: center;
-        position: relative;
+        flex-direction: column;
       }
 
-      &-logo {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        background-image: url('../img/logo.png');
-        border-radius: 50%;
+      &-inner {
+        display: flex;
+        align-items: center;
+        position: relative;
       }
 
       &-actions {
@@ -374,6 +398,84 @@ body {
             }
           }
 
+        }
+      }
+
+      &-hint {
+        font-size: 9px;
+        color: $text-color-lightgrey;
+        margin: 4px 0 4px 42px;
+        letter-spacing: .01em;
+      }
+    }
+
+    &-item {
+      margin: 8px 0;
+      display: flex;
+
+      &-text {
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.4em;
+
+        span {
+          font-weight: bold;
+          color: $text-color-blue;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &-wrap {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          flex: 1;
+          margin-right: 20px;
+        }
+      }
+      &-actions {
+        margin-top: 3px;
+        font-size: 12px;
+        color: $text-color-grey;
+        padding-left: 10px;
+        cursor: pointer;
+
+        span {
+          color: $text-color-blue;
+          font-weight: normal;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &-answers {
+        margin-top: 16px;
+        margin-left: 10px;
+        font-size: 12px;
+        color: $text-color-blue;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 18px;
+          height: 11px;
+          background-image: url('../img/answer-arrow.png');
+          margin-right: 6px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid $text-color-blue;
         }
       }
     }

@@ -120,4 +120,47 @@ body {
 .post-excerpt-info-button:hover {
   background-color: #e9ebee;
 }
+
+.action-wrap {
+  margin-top: 4px;
+  display: flex;
+}
+
+.action-button {
+  font-size: 13px;
+  color: #616770;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+  height: 32px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background: rgba(29, 33, 41, 0.04);
+}
+
+.action-button:before {
+  content: '';
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  background-image: url("../img/post-actions.png");
+  margin-right: 4px;
+}
+
+.action-button-like:before {
+  margin-top: -2px;
+}
+
+.action-button-comment:before {
+  background-position-y: -18px;
+  margin-top: 1px;
+}
+
+.action-button-share:before {
+  background-position-y: -36px;
+}
 /*# sourceMappingURL=style.css.map */

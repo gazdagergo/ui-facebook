@@ -7,6 +7,8 @@ $button-background-color-hover: #e9ebee;
 $button-border-color: #ced0d4;
 $button-text-color: #4b4f56;
 
+$action-text-color: #616770;
+$action-background-hover: rgba(29, 33, 41, .04);
 
 body {
   background: lightgray;
@@ -132,5 +134,49 @@ body {
   }
 }
 
+.action {
+  &-wrap {
+    margin-top: 4px;
+    display: flex;
+  }
+
+  &-button {
+    font-size: 13px;
+    color: $action-text-color;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+    height: 32px;
+    cursor: pointer;
+
+    &:hover {
+      background: $action-background-hover;
+    }
+
+    &:before {
+      content: '';
+      height: 18px;
+      width: 18px;
+      display: inline-block;
+      background-image: url('../img/post-actions.png');
+      margin-right: 4px;
+    }
+    
+    &-like:before {
+      margin-top: -2px;
+    }
+
+    &-comment:before {
+      background-position-y: -18px;
+      margin-top: 1px;
+    }
+    
+    &-share:before {
+      background-position-y: -36px;
+    }
+  }
+}
 
 
